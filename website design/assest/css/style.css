@@ -1,3 +1,5 @@
+/* ==============for color=============== */
+
 :root {
     --color1: #001219;
     --color2: #005f73;
@@ -10,6 +12,9 @@
     --color9: #ae2012;
     --color10: #9b2226;
 }
+
+/* ===========generic site styles========== */
+
 html {
     box-sizing: border-box;
 }
@@ -17,6 +22,14 @@ html {
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #DBE5DE;
+}
+
+/* ===========Collections========= */
+
+#collections {
+    padding: 0rem 0rem 4rem 0rem;
 }
 
 section {
@@ -53,18 +66,18 @@ figure img {
 }
 
 figcaption {
-background-color: rgba(255, 255, 255, 0.8);
-position: absolute;
-bottom: 0;
-width: 100%;
-font-size: 1.875rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.875rem;
 }
 
 figcaption a {
     padding: 1rem;
     text-decoration: none;
     display: block;
-    color :var(--color1);
+    color: var(--color1);
 }
 
 .color2,
@@ -101,4 +114,78 @@ figcaption a {
 .color8 a:hover {
     border-color: var(--color8);
     color: var(--color8);
+}
+
+.color10,
+.color10 a:hover {
+    border-color: var(--color10);
+    color: var(--color10);
+}
+
+/* ===========popular-prints========= */
+
+#popularprint {
+    background-color: var(--color2);
+    padding: 1rem 0rem 4rem 0rem;
+}
+
+.popular {
+    color: wheat;
+}
+
+/* =============header============= */
+
+.header {
+    background-color: var(--color5);
+}
+
+header {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav li {
+    flex-basis: 48%;
+    margin-bottom: 0.5rem;
+}
+
+nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+nav li:first-child a {
+    background-color: transparent;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: whitesmoke;
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: var(--color10);
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: var(--color1);
+    color: var(--color5);
+}
+
+/* ==========featured========== */
+
+#featured {
+    padding: 1rem 0rem 1rem 0rem;
 }
