@@ -170,7 +170,7 @@ nav li:first-child a {
 
 nav a {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: whitesmoke;
     display: block;
     padding: 0.5rem;
@@ -188,4 +188,36 @@ nav a:hover {
 
 #featured {
     padding: 1rem 0rem 1rem 0rem;
+}
+
+
+/* ===================footer================ */
+
+.footer {
+    background-color: var(--color5);
+}
+
+footer {
+    max-width: 1200px;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+footer li {
+    margin-right: 1rem;
+}
+
+footer address {
+    font-style: normal;
+    margin-top: 2rem;
+    font-weight: bold;
 }

@@ -1,10 +1,8 @@
 /* ===========tablet============ */
-
 @media (min-width: 550px) {
 
 
     /* ==========collection========== */
-
     section ul {
         display: flex;
         flex-flow: row wrap;
@@ -21,7 +19,6 @@
 
 
     /* ==========header========== */
-
     header {
         padding: 3rem;
     }
@@ -48,15 +45,24 @@
     }
 }
 
+/* ============footer============= */
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.social,
+address {
+    flex-basis: 49.5%;
+}
 
 
 /* ===========desktop=========== */
-
 @media (min-width:800px) {
 
 
     /* ==========collection========== */
-
     section h2 {
         margin-left: 100px;
     }
@@ -66,22 +72,42 @@
     }
 
     /* ==========header========== */
-
-    nav li {
+    nav ul {
+        justify-content: flex-end;
+    }
+    nav li:first-child {
+        flex-basis: auto;
         margin: 0 auto;
+        order: 2;
+    }
+    nav li:nth-child(2),
+    nav li:nth-child(3) {
+        order: 1;
+        padding: 0rem 1rem 0rem 1rem;
+    }
+    nav li:nth-child(4),
+    nav li:nth-child(5) {
+        order: 3;
+        padding: 0rem 1rem 0rem 1rem;
     }
 
-    
+/* =============footer============= */
+address {
+    flex-basis: 65.5%;
 }
 
+section li,
+.social {
+    flex-basis: 32.5%;
+}
+
+}
 
 /* ===========tablet and desktop=========== */
-
 @media (min-width:550px) and (max-width:799px) {
 
 
     /* ==========popullarprints========== */
-
     section li.tablet-card-3 {
         flex-basis: 100%;
     }
